@@ -22,13 +22,11 @@ namespace LuceneTest
             ofd.Filter = "JSON|*.json";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                filepath = ofd.SafeFileName;
+                filepath = ofd.FileName;
             }
-
+            WriteLine(filepath.ToString());
             string json = null;
-
-            try { json = File.ReadAllText(filepath); }
-            catch (Exception ex) { WriteLine("Error: " + ex.Message.ToString()); }
+            json = File.ReadAllText(filepath);
             
             List<records> storeRecords = DeserializeJSON(json);
 

@@ -126,8 +126,8 @@ namespace LuceneTest
                 //Console.WriteLine("Rank " + rank + " score " + scoreDoc.Score + " text " + myFieldValue);
                 Console.WriteLine();
                 Console.WriteLine("Rank #" + rank);
-                Console.WriteLine("URL: " + field_URL);
-                Console.WriteLine("Passage Text: ");
+                Console.WriteLine("Result: " + field_URL);
+                //Console.WriteLine("Passage Text: ");
                 //Console.WriteLine(field_Text);
                 Console.WriteLine();
             }
